@@ -1,2 +1,52 @@
-body {
+* {
+  box-sizing: border-box; }
+
+html {
   font-size: 62.5%; }
+
+body {
+  font: 1.6rem/1.5 Helvetica, sans-serif;
+  margin: 0; }
+
+#users {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 3rem;
+  padding: 0 15%; }
+  #users error {
+    outline: 0.1rem solid red; }
+  #users article {
+    position: relative; }
+    #users article img {
+      width: 100%;
+      height: auto; }
+    #users article button {
+      color: white;
+      border-radius: 0;
+      border: none;
+      width: 3rem;
+      height: 3rem;
+      outline: none;
+      position: absolute;
+      top: 0;
+      right: 0; }
+    #users article .addButton {
+      background-color: green; }
+    #users article .deleteButton {
+      background-color: red; }
+    #users article input {
+      width: 100%;
+      height: 25px; }
+    #users article input[type='file'] {
+      position: absolute;
+      top: 35%;
+      left: 35%;
+      color: transparent; }
+    #users article .noMargin {
+      margin: 0; }
+    #users article ul {
+      list-style-type: none;
+      padding: 0;
+      margin-top: 0; }
+      #users article ul li:not(:last-of-type) {
+        text-transform: capitalize; }
